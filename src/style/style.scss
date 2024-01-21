@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: "StratosSkyeng";
+  src:
+    local("StratosSkyeng"),
+    url("../../static/fonts/stratosskyengweb-regular.woff") format("woff"),
+    url("../../static/fonts/stratosskyengweb-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: #004980;
+  font-family: "StratosSkyeng";
+}
+.center {
+  padding-left: calc(50% - 1024px / 2);
+  padding-right: calc(50% - 1024px / 2);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  width: 100%;
+  max-width: 480px;
+  min-height: 459px;
+  border-radius: 12px;
+  background: #c2f5ff;
+}
+.select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin-top: 50px;
+    color: #004980;
+    text-align: center;
+    font-size: 40px;
+    line-height: 48px;
+    max-width: 208px;
+  }
+  &__field {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98px;
+    gap: 26px;
+  }
+  &__item {
+    border-radius: 12px;
+    background: #fff;
+    height: 100%;
+    width: 98px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0080c1;
+    font-size: 64px;
+    line-height: 72px;
+    
+    &_active {
+      border: 2px solid salmon;
+    }
+  }
+  &__button {
+    margin-top: 67px;
+    max-width: 246px;
+    width: 100%;
+    height: 48px;
+    border-radius: 12px;
+    background: #7ac100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
